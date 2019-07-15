@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript">
+            window.onload=function(){   
+                var img=document.getElementsByTagName("img")[0];
+                var index=1;
+                img.onclick=function(){
+                    index++;
+                    if(index>4){
+                        index=1;
+                    }
+                    img.src="./img/invisible.png";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <img src="./img/visible.png" />
+    </body>
+</html>

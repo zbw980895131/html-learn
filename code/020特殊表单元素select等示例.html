@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>特殊表单元素select等示例</title>
+</head>
+<body>
+	<form action="http://www.zbw920620.com" method="get" name="Myform" target="_blank">
+	<!-- select选择元素 -->
+	<label for="Myselect">fruit</label>
+
+	<select name="Myselect">
+		<option value="apple">Apple</option>
+		<option value="orange">Orange</option>
+		<option value="banana">Banana</option>
+	</select>
+	<input type="submit" name="Submit">
+	</form>
+	<!-- textarea文本域元素 -->
+	<hr>
+	<textarea rows="1o" cols="30">这是一个文本域</textarea>
+	<hr>
+
+	<!-- <label> 标签定义了 <input> 元素的标签，一般为输入标题。
+	<label> 标签的 for 属性应当与相关元素的 id 属性相同。 -->
+
+	<form action="/statics/demosource/demo-form.php"> 
+		<label for="male">Male</label>
+		<input type="radio" name="sex" id="male" value="male"><br>
+		<label for="female">Female</label>
+		<input type="radio" name="sex" id="female" value="female"><br><br>
+		<input type="submit" value="提交">
+	</form>
+		<hr>
+	<form>
+		<button type="button" name="button">这是一个按钮</button>
+	</form><hr>
+
+	<!-- <fieldset> 标签定义了一组相关的表单元素，并使用外框包含起来。
+	<legend> 标签定义了 <fieldset> 元素的标题。 -->
+
+	<form>
+		<fieldset>
+			<legend>Personalia:</legend>
+			Name:<input type="text" name="name"><br><br>
+			Telepone:<input type="text" name="tel"><br><br>
+			Email:<input type="text" name="Email"><br><br>
+		</fieldset>
+	</form>
+</body>
+</html>
